@@ -90,3 +90,19 @@
   color: #6c757d;
   margin: 0 0 2px 4px;
 }
+
+.password {
+  display: flex; 
+  flex-direction: row;
+  cursor: pointer;
+  .eye {
+    margin-left: 2px;
+    display: flex; 
+    border-radius: 0 8px 8px 0;
+    border: 1px solid rgba(243, 243, 244, 1);
+    margin-bottom: 4px;
+    > div {
+      margin: auto;
+    }
+  }
+}
