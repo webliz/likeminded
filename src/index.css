@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "RussoOne-Regular";
+  src: local("RussoOne-Regular"), url("./fonts/RussoOne-Regular.ttf");
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "RobotoSerif";
+  src: local("RobotoSerif"), url("./fonts/RobotoSerif.ttf");
+  font-weight: normal;
+}
