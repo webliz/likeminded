@@ -77,6 +77,27 @@
   }
 }
 
+.form-field-invalid {
+  width: 90%;
+  padding: 10px 16px;
+  background: rgba(243, 243, 244, 1);
+  border-radius: 8px;
+  border: 0;
+  margin-bottom: 4px;
+  border: 1px solid rgba(234, 76, 137, 0.8);
+  outline: none;
+  &:hover {
+    background: rgba(243, 243, 244, 0.5);
+    border: 1px solid rgba(234, 76, 137, 0.5);
+  }
+  &:focus {
+    background: #ffffff;
+    border: 1px solid rgba(234, 76, 137, 0.8);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(234, 76, 137, .25);
+  }
+}
+
 .form-label {
   font-weight: 400;
   margin: 0 0 2px 4px;
@@ -88,6 +109,14 @@
   margin-top: 4px;
   font: 0.6rem "RobotoSerif";
   color: #6c757d;
+  margin: 0 0 2px 4px;
+}
+
+.required-field {
+  width: 100%;
+  margin-top: 4px;
+  font: 0.6rem "RobotoSerif";
+  color: rgba(234, 76, 137, 1);
   margin: 0 0 2px 4px;
 }
 

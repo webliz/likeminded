@@ -1,4 +1,9 @@
 
+export const EMAIL_MAX = 30;
+export const PASSWORD_MAX = 50;
+export const PASSWORD_MIN = 8;
+export const USERNAME_MAX = 50;
+export const USERNAME_MIN = 8;
 export const userRoles = [{key: 0, name: "Please select a user role"}, {key: 1, name: "User"}, {key: 2, name: "Mentor"}, {key: 3, name: "Autor"}];
 /** Regular expressions */
 export const EMAIL_REGEX:RegExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

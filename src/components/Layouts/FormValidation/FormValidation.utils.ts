@@ -1,5 +1,5 @@
 /** Types and constants */
-import { EMAIL_REGEX } from 'components/App.constants';
+import { EMAIL_REGEX, PASSWORD_STRONG_REGEX, PASSWORD_REGEX } from 'components/App.constants';
 
 export function validate(key: string, event: any):boolean {
   var target = event.target as HTMLSelectElement || HTMLInputElement;
@@ -18,4 +18,8 @@ export function validate(key: string, event: any):boolean {
   } else {
     return false;
   }
+}
+
+export function validatePassword(value: string, isMentor: boolean):boolean {
+  return isMentor ? PASSWORD_STRONG_REGEX.test(value) : PASSWORD_REGEX.test(value);
 }
