@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Input from 'components/Layouts/FormComponents/Input/Input';
 import Label from 'components/Layouts/FormComponents/Label/Label';
 import Select from 'components/Layouts/FormComponents/Select/Select';
+import InfoField from './Layouts/FormValidation/InfoField/InfoField';
 /** Styles */
 import styles from './App.module.scss';
 /** Types and constants */
@@ -72,6 +73,12 @@ function App() {
                   } 
                 </div>
               </div>
+            </div>
+            <div style={{height: 8, display: "flex", flexDirection: "column"}}>
+              {user.role === 2 // is a user Mentor?
+                ? <InfoField className={styles["info-field"]} message={`Minimum 8 characters with 1 number, 1 uppercase letter and 2 symbols`}/>
+                : <InfoField className={styles["info-field"]} message={`Minimum 8 characters with 1 number and one uppercase letter`}/>
+              }
             </div>
           </div>
 
