@@ -26,8 +26,8 @@ function App() {
         </div>  
         <form id="likeminded-form" onClick={handleSubmit} autoComplete="off" className={styles.form}>   
           {/* Email */}
-          <div>
-            <Label>
+          <div className={styles["form-group"]}>
+            <Label className={styles["form-label"]}>
               {"Email"}
             </Label>
               <Input
@@ -37,11 +37,12 @@ function App() {
                 onChange={(e:any) => {
                   setUser({...user, [e.target.name]: e.target.value });
                 }}
+                className={styles["form-field"]}
               />
           </div>
           {/* Password */}
-          <div style={{marginBottom: 50}}>
-            <Label>
+          <div className={styles["form-group"]} style={{marginBottom: 50}}>
+            <Label className={styles["form-label"]}>
               {"Password"}
             </Label>
             <div className={styles.password}>
@@ -53,13 +54,14 @@ function App() {
                 onChange={(e:any) => {
                   setUser({...user, [e.target.name]: e.target.value });
                 }}
+                className={styles["form-field"]}
               />
             </div>
           </div>
 
           {/* Username */}
-          <div>
-            <Label>
+          <div className={styles["form-group"]}>
+            <Label className={styles["form-label"]}>
               {"Username"}
             </Label>
             <Input
@@ -69,11 +71,12 @@ function App() {
               onChange={(e:any) => {
                 setUser({...user, [e.target.name]: e.target.value })
               }}
+              className={styles["form-field"]}
             />
           </div>
           {/* User role */}
-          <div>
-            <Label>
+          <div className={styles["form-group"]}>
+            <Label className={styles["form-label"]}>
               {"User role"}
             </Label>
             <Select 
@@ -83,6 +86,8 @@ function App() {
               onChange={(e:any) => {
                 setUser({...user, [e.target.name]: parseInt(e.target.value) });
               }}
+              className={styles["form-field"]}
+              style={{width: "100%"}}
             />
           </div>
           <button 
