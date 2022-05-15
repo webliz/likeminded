@@ -31,6 +31,7 @@ const Input:React.FC<InputField>
       maxLength={max} 
       minLength={min} 
       onChange={onChange}
+      data-testid='form-input'
     />
   )
 }

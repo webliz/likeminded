@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component renders correctly 1`] = `
+<input
+  data-testid="form-input"
+  name="password"
+  onChange={[Function]}
+  type="password"
+  value=""
+/>
+`;

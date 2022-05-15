@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders correctly 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="form-wrapper"
+  >
+    <div
+      className="heading"
+    >
+      <div>
+        Sign Up
+      </div>
+      <div>
+        Let's create your account
+      </div>
+    </div>
+    <form
+      autoComplete="off"
+      className="form"
+      id="likeminded-form"
+      onClick={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="form-label"
+        >
+          Email
+        </label>
+        <input
+          className="form-field"
+          data-testid="form-input"
+          maxLength={30}
+          name="email"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+        <div
+          style={
+            Object {
+              "height": 4,
+            }
+          }
+        />
+      </div>
+      <div
+        className="form-group"
+        style={
+          Object {
+            "marginBottom": 50,
+          }
+        }
+      >
+        <label
+          className="form-label"
+        >
+          Password
+        </label>
+        <div
+          className="password"
+        >
+          <input
+            className="form-field"
+            data-testid="form-input"
+            id="password-field"
+            maxLength={50}
+            minLength={8}
+            name="password"
+            onChange={[Function]}
+            style={
+              Object {
+                "borderRadius": "8px 0 0 8px",
+                "width": "86%",
+              }
+            }
+            type="password"
+            value=""
+          />
+          <div
+            className="eye"
+            onClick={[Function]}
+          >
+            <div>
+              <svg
+                fill="none"
+                height={15}
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                width={15}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+              "height": 8,
+            }
+          }
+        >
+          <label
+            className="info-field"
+          >
+            Minimum 8 characters with 1 number and one uppercase letter
+          </label>
+        </div>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          className="form-label"
+        >
+          Username
+        </label>
+        <input
+          className="form-field"
+          data-testid="form-input"
+          maxLength={30}
+          minLength={2}
+          name="username"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+        <div
+          style={
+            Object {
+              "height": 4,
+            }
+          }
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          className="form-label"
+        >
+          User role
+        </label>
+        <select
+          className="form-field"
+          name="role"
+          onChange={[Function]}
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+          value={0}
+        >
+          <option
+            value={0}
+          >
+            Please select a user role
+          </option>
+          <option
+            value={1}
+          >
+            User
+          </option>
+          <option
+            value={2}
+          >
+            Mentor
+          </option>
+          <option
+            value={3}
+          >
+            Autor
+          </option>
+        </select>
+        <div
+          style={
+            Object {
+              "height": 4,
+            }
+          }
+        />
+      </div>
+      <button
+        className="create-action"
+        disabled={true}
+      >
+        Create Account
+      </button>
+    </form>
+  </div>
+</div>
+`;
